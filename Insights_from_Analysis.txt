@@ -1,0 +1,108 @@
+A. Key Insights from BankChurn_Analysis_Python
+    I. From Basic and Additional Analysis
+        1. Overview:
+            - Total Customers: 10,000
+            - Churned Customers: 2,037
+            - Churn Rate: 20.37%
+            - Average Credit Score by Geography: Ba Đình: 651.33
+                                                 Mỹ Đình: 651.45
+                                                 Thăng Long: 649.67
+            - Customer Status Distribution: Active Customers: 79.63%
+                                            Churned Customers: 20.37%
+            - Average Customer Age: 38.92 years
+            - Customer Distribution by Gender:  Male: 54.57%
+                                                Female: 45.43%
+        2. Tenure vs. Churn Rate:
+            - Churn rate varies slightly by tenure, ranging from 19.1% to 21.9%.
+            - Customers with 5 years of tenure have the highest churn rate at 21.9%.
+
+        3. High Balance Churn Rate:
+            - Customers with a balance over 100,000 have a churn rate of 25.2%,
+            which is higher than the average churn rate.
+
+        4. Age Group Churn Rate:
+            - Highest churn rates are seen in the 46-55 age group (50.6%) and 56-65 age group (48.3%).
+            - Churn rates are lowest in the <25 (7.5%) and 25-35 (8.5%) age groups.
+
+        5. Credit Card Ownership vs. Churn:
+            - No clear correlation was found between credit card ownership and churn in this dataset.
+
+        6. Geography-based Churn Rate:
+            - Mỹ Đình has the highest churn rate at 32.4%,
+            - While Ba Đình and Thăng Long have lower churn rates at 16.7% and 16.2%, respectively.
+
+        7. Product Holding vs. Churn Rate:
+            - Customers with only 1 product have a higher churn rate at 27.7%.
+            - Those with 3 or more products show significantly higher churn rates:
+            82.7% for 3 products and 100% for 4 products.
+
+        8. Key Takeaways
+            - Age and product holding are strong indicators of churn,suggesting that retention strategies
+            could be targeted toward middle-aged customers and those with fewer products.
+            - The geography-based churn in Mỹ Đình indicates a need for region-specific interventions.
+            - High-balance customers still exhibit a notable churn risk,
+            highlighting potential dissatisfaction even among more profitable customers.
+
+
+    II. From Statistical Analysis, we conclude "Top Factors Contributing to Churn" are:
+
+        1. Correlation Analysis
+        The features most correlated with churn (positive correlation) are:
+            - Age: 0.285 (strongest correlation)
+            - GeographyID: 0.154
+            - Balance: 0.119
+            - GenderID: 0.107
+            - IsActiveMember: -0.156 (negative correlation, indicating active members are less likely to churn)
+
+        2. Decision Tree Feature Importance
+        The decision tree model identifies the following as the top predictors of churn:
+            - Age: 21.4% importance (most significant factor)
+            - Estimated Salary: 17.6% importance
+            - Balance: 16.4% importance
+            - Credit Score: 13.6% importance
+            - Number of Products: 11.9% importance
+            - Is Active Member: 6.6% importance
+
+        3. Key Insights
+        - Age is consistently the strongest factor influencing churn,
+        indicating that older customers are more likely to churn.
+        - Estimated Salary and Balance also play a significant role,
+        suggesting potential dissatisfaction among wealthier customers.
+        - Credit Score and Number of Products are important factors,
+        indicating that financial behavior and product engagement affect churn.
+
+
+B. Key Insights from PotentialCustomer_Analysis_Python
+    I. Analysis Summary
+        1. Average Tenure of Potential Customers:
+            - Higher average tenure compared to the overall customer base,
+            indicating stronger relationships.
+        2. Product Engagement:
+            - A significant portion of potential customers hold multiple products,
+            signaling opportunities for upselling.
+        4. Geography Distribution:
+            - Geography patterns show specific areas with higher numbers of potential customers.
+        5. Age Group Distribution:
+            - Potential customers are mostly in middle age groups (36-55),
+            indicating a mature customer base.
+        6. Active vs. Inactive Status:
+            - A higher percentage of potential customers are active members,
+            showcasing strong engagement.
+
+    II. Key Takeaways
+        - High Credit Score & Balance: Customers with high scores and balances are prime targets for additional products/services.
+        - Engaged Customers: These customers are more likely to respond positively to cross-selling or loyalty programs.
+        - Regional Focus: Marketing and customer retention strategies should be tailored to regions with a higher concentration of potential customers.
+
+
+C. Key Insights from PotentialCustomer_Analysis_SQL
+    1. High Credit Score and Balance:
+        - The SQL query identified potential customers with credit scores over 700 and balances above 100,000.
+    2. Average Tenure:
+        - Potential customers have a higher average tenure, indicating long-standing relationships.
+    3. Product Engagement:
+        - Most potential customers hold 2-3 products, showing engagement beyond basic services.
+    3. Geography Distribution:
+        - Potential customers are concentrated in certain regions, reflecting regional trends.
+
+
